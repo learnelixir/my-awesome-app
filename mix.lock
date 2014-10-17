@@ -1,0 +1,9 @@
+%{"conform": {:hex, :conform, "0.10.5"},
+  "cowboy": {:hex, :cowboy, "1.0.0"},
+  "cowlib": {:hex, :cowlib, "1.0.0"},
+  "exrm": {:hex, :exrm, "0.14.11"},
+  "linguist": {:hex, :linguist, "0.1.2"},
+  "phoenix": {:hex, :phoenix, "0.4.1"},
+  "plug": {:hex, :plug, "0.7.0"},
+  "poison": {:hex, :poison, "1.1.1"},
+  "ranch": {:hex, :ranch, "1.0.0"}}
