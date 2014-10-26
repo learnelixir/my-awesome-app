@@ -2,5 +2,8 @@
 /deps
 erl_crash.dump
 *.ez
+<<<<<<< HEAD
 /rel
 .DS_Store
+=======
+>>>>>>> c999e7c193cc1bcc0b370b965186fa79a58c8e4c
