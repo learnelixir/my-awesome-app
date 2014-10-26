@@ -25,8 +25,8 @@ defmodule MyAwesomeApp.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      {:phoenix, "0.5.0"},
       {:cowboy, "~> 1.0.0"},
+      {:phoenix, "0.5.0"},
       {:exrm, "~> 0.14.11"},
       {:ranch, "~> 1.0.0"}
     ]
