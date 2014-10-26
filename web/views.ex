@@ -8,6 +8,7 @@ defmodule MyAwesomeApp.Views do
       # This block is expanded within all views for aliases, imports, etc
       import MyAwesomeApp.I18n
       import MyAwesomeApp.Router.Helpers
+      alias Phoenix.Controller.Flash
     end
   end
 

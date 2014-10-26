@@ -1,6 +1,10 @@
 defmodule MyAwesomeApp.Router do
   use Phoenix.Router
-
-  get "/", MyAwesomeApp.PageController, :index, as: :pages
+  
+  scope "/" do
+    pipe_through :browser
+    
+    get "/", MyAwesomeApp.PageController, :index, as: :pages
+  end
 
 end

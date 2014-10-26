@@ -1,23 +1,20 @@
 use Mix.Config
 
-# NOTE: To get SSL working, you will need to set:
+# ## SSL Support
 #
-#     ssl: true,
-#     keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
-#     certfile: System.get_env("SOME_APP_SSL_CERT_PATH"),
+# To get SSL working, you will need to set:
 #
-# Where those two env variables point to a file on disk
-# for the key and cert
+#     https: [port: 443,
+#             keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
+#             certfile: System.get_env("SOME_APP_SSL_CERT_PATH")]
+#
+# Where those two env variables point to a file on
+# disk for the key and cert.
 
 config :phoenix, MyAwesomeApp.Router,
-  port: System.get_env("PORT"),
-  ssl: false,
-  host: "example.com",
-  cookies: true,
-  session_key: "_my_awesome_app_key",
-  session_secret: "7308E_031%IM)=7MNU91*1J9KVXE9$B1SWYYZ%P_+C+DBNFH7!MXQOQ+C&G66@6H682"
+  url: [host: "example.com"],
+  http: [port: System.get_env("PORT")],
+  secret_key_base: "oXLywfYvLeqUBlTmg2ly4HL64UpJycMiwqG2OlN95TM30AwXqXEFbwjAbD/tgnfDDNpqFeEcyCEG9U6SXRROeQ=="
 
 config :logger, :console,
-  level: :info,
-  metadata: [:request_id]
-
+  level: :info

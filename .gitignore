@@ -3,3 +3,4 @@
 erl_crash.dump
 *.ez
 /rel
+.DS_Store

@@ -9,7 +9,7 @@ defmodule MyAwesomeApp do
     children = [
       # Define workers and child supervisors to be supervised
       # worker(TestApp.Worker, [arg1, arg2, arg3])
-      worker(MyAwesomeApp.Router, [], function: :start)
+      # worker(MyAwesomeApp.Router, [], function: :start)
     ]
 
     IO.puts (inspect children)
