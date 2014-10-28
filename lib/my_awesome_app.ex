@@ -12,7 +12,7 @@ defmodule MyAwesomeApp do
       # worker(MyAwesomeApp.Router, [], function: :start)
     ]
 
-    IO.puts (inspect children)
+    MyAwesomeApp.Router.start
 
     opts = [strategy: :one_for_one, name: MyAwesomeApp.Supervisor]
     Supervisor.start_link(children, opts)
