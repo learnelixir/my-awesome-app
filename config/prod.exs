@@ -13,7 +13,7 @@ use Mix.Config
 
 config :phoenix, MyAwesomeApp.Router,
   url: [host: "example.com"],
-  http: [port: System.get_env("PORT")],
+  http: [port: System.get_env("PORT") || 4000],
   secret_key_base: "oXLywfYvLeqUBlTmg2ly4HL64UpJycMiwqG2OlN95TM30AwXqXEFbwjAbD/tgnfDDNpqFeEcyCEG9U6SXRROeQ=="
 
 config :logger, :console,
