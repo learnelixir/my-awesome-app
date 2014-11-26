@@ -1,4 +1,3 @@
 defmodule MyAwesomeApp.PageView do
-  use MyAwesomeApp.Views
-
+  use Phoenix.View, root: "web/templates"
 end

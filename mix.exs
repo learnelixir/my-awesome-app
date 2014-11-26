@@ -4,7 +4,7 @@ defmodule MyAwesomeApp.Mixfile do
   def project do
     [ app: :my_awesome_app,
       version: "0.0.1",
-      elixir: "~> 1.0.0",
+      elixir: "~> 1.0.2",
       elixirc_paths: ["lib", "web"],
       compilers: [:phoenix] ++ Mix.compilers,
       deps: deps ]
@@ -26,7 +26,7 @@ defmodule MyAwesomeApp.Mixfile do
   defp deps do
     [
       {:cowboy, "~> 1.0.0"},
-      {:phoenix, "0.5.0"},
+      {:phoenix, "0.6.0"},
       {:exrm, "~> 0.14.11"},
       {:ranch, "~> 1.0.0"}
     ]
